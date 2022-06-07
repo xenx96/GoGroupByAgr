@@ -7,9 +7,12 @@ import (
 
 func FindConvertColumn(data [][]string, col string) (int, string) {
 	headers := data[0]
+	if col == "Index" {
+		return 0, col
+	}
 	for i, h := range headers {
 		if h == col {
-			return i, col
+			return i + 1, col
 		}
 	}
 

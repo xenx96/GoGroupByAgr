@@ -1,0 +1,14 @@
+Indexing 기준인지 -> 압축 비율 설정 필요
+
+동영님. 어제 말씀하신 백신 혹은 방화벽에따른 'exe 실행 금지'는
+'바이러스 검출 알고리즘'에 따라 진행되므로, 걱정 안하셔도 된다고 합니다.
+현재 Convertor의 사용법을 변경하였습니다.
+현재 Convertor는 setting.ini와 한묶음 입니다.
+ 
+ 기존 사용방법은 Command line에 직접 입력하는 방법이었다면,
+현재 Convertor는 setting.ini 파일에 변수에 맞는 값을 입력하여, 돌아가는 방식입니다.
+'setting.ini'에 들어가는 항목은 총 3가지로 
+	- Name : 압축 기준 Colum-name (Tesla 기준 Time)
+	- Stat : min, max, avg 중 선택
+	- N_Compression : 압축 비율 (1/N)입니다.
+
